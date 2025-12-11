@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor Full-Stack | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>DevFullStack</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Desenvolvedor Full-Stack">Desenvolvedor Full-Stack</h1>
+            <p class="hero-subtitle">Transformando ideias em soluções digitais inovadoras</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="code-animation">
+                <pre><code id="typing-code"></code></pre>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJEU5I-JupQUKTKh_gal8BibC_jRDLr6ZGArvXU9vBverDtb48=s288-c-no" alt="Imagem Profissional">
+                        
+                    
+                </div>
+                <div class="about-text">
+                    <h3>Especialista em Desenvolvimento Web Completo</h3>
+                    <p>Como desenvolvedor Full-Stack, domino tanto o <strong>front-end</strong> quanto o <strong>back-end</strong>, criando aplicações web completas, escaláveis e de alta performance.</p>
+                    <p>Minha expertise abrange desde a criação de interfaces intuitivas e responsivas até a construção de APIs robustas, gerenciamento de bancos de dados e implementação de arquiteturas modernas.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>50+</h4>
+                            <p>Projetos Concluídos</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5+</h4>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>30+</h4>
+                            <p>Clientes Satisfeitos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Desenvolvimento Front-End</h3>
+                    <p>Criação de interfaces modernas e responsivas com React, Vue.js, HTML5, CSS3 e JavaScript.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Desenvolvimento Back-End</h3>
+                    <p>APIs RESTful e GraphQL com Node.js, Python, PHP e bancos de dados SQL/NoSQL.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Aplicações Mobile</h3>
+                    <p>Desenvolvimento de apps híbridos com React Native e Progressive Web Apps (PWA).</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Banco de Dados</h3>
+                    <p>Modelagem, otimização e gerenciamento de MySQL, PostgreSQL, MongoDB e Redis.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Deploy & DevOps</h3>
+                    <p>Configuração de servidores, CI/CD, Docker, Kubernetes e cloud (AWS, Azure, GCP).</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança Web</h3>
+                    <p>Implementação de autenticação, autorização, criptografia e proteção contra vulnerabilidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette"></i> Front-End</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5 / CSS3</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript / TypeScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js / Next.js</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Back-End</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js / Express</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python / Django</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL / NoSQL</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git / GitHub</span>
+                            <span>93%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 93%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Docker / Kubernetes</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>AWS / Cloud Services</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfólio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="api">APIs</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Plataforma completa com carrinho, pagamentos e painel admin</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Health Tracker App</h3>
+                        <p>Aplicativo de monitoramento de saúde e fitness</p>
+                        <div class="portfolio-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="api">
+                    <div class="portfolio-image">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>RESTful API</h3>
+                        <p>API escalável para gerenciamento de recursos</p>
+                        <div class="portfolio-tags">
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Painel de análise de dados em tempo real</p>
+                        <div class="portfolio-tags">
+                            <span>Vue.js</span>
+                            <span>Python</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Social Network</h3>
+                        <p>Rede social com chat em tempo real</p>
+                        <div class="portfolio-tags">
+                            <span>Next.js</span>
+                            <span>Socket.io</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Food Delivery App</h3>
+                        <p>App de delivery com rastreamento em tempo real</p>
+                        <div class="portfolio-tags">
+                            <span>React Native</span>
+                            <span>GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos trabalhar juntos!</h3>
+                    <p>Estou disponível para projetos freelance e oportunidades de trabalho. Entre em contato para discutirmos como posso ajudar seu negócio.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>wandersonsoares@wscyberdev.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>+55 (38) 99198-8660</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Minas Gerais, Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DevFullStack. Todos os direitos reservados.</p>
+            <p>Desenvolvido com <i class="fas fa-heart"></i> e muito <i class="fas fa-coffee"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
